@@ -1,0 +1,2 @@
+# thinkinginai
+Thinking In AI
