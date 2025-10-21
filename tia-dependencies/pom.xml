@@ -14,16 +14,17 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring-boot.version>3.5.5</spring-boot.version>
+        <spring-boot.version>3.5.6</spring-boot.version>
         <spring-cloud.version>2025.0.0</spring-cloud.version>
-        <spring-ai.version>1.0.1</spring-ai.version>
+        <spring-ai.version>1.0.3</spring-ai.version>
+        <spring-ai.alibaba.version>1.0.0.2</spring-ai.alibaba.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
+                <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -39,6 +40,13 @@
                 <groupId>org.springframework.ai</groupId>
                 <artifactId>spring-ai-bom</artifactId>
                 <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud.ai</groupId>
+                <artifactId>spring-ai-alibaba-bom</artifactId>
+                <version>${spring-ai.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

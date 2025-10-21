@@ -1,0 +1,26 @@
+server:
+  port: 19001
+
+spring:
+  application:
+    name: tia-alibaba-mcp-server-webflux
+  main:
+    web-application-type: none
+  ai:
+    openai:
+      api-key: <changeit>
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
+    mcp:
+      client:
+        enabled: true
+        name: my-mcp-client
+        version: 1.0.0
+        request-timeout: 30s
+        type: async
+        sse:
+          connections:
+            server1:
+              url: http://localhost:19000

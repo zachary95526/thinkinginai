@@ -1,0 +1,19 @@
+server:
+  port: 19000
+
+spring:
+  application:
+    name: tia-alibaba-mcp-server-webflux
+  ai:
+    mcp:
+      server:
+        name: ${spring.application.name}
+        version: 1.0.0
+        type: async
+        instructions: "This reactive server provides time information tools and resources"
+        sse-message-endpoint: /mcp/message
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
