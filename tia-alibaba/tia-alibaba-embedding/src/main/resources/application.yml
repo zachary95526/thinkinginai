@@ -11,4 +11,18 @@ spring:
       embedding:
         options:
           model: text-embedding-v1
-    
+    vectorstore:
+      type: milvus
+      milvus:
+        initialize-schema: true
+        database-name: switch_langchain4j_to_springai_test
+        embedding-dimension: 1536
+        collection-name: zhengyu_test
+        id-field-name: id
+        content-field-name: text
+        embedding-field-name: vector
+        client:
+          host: 172.17.65.113
+          port: 50230
+          username: root
+          password: Milvus
