@@ -12,6 +12,7 @@
         <module>tia-alibaba-chat</module>
         <module>tia-alibaba-mcp-server</module>
         <module>tia-alibaba-mcp-client</module>
+        <module>tia-alibaba-embedding</module>
     </modules>
 
     <properties>

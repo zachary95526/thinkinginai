@@ -1,0 +1,7 @@
+### 初始化向量数据
+GET http://localhost:8080/vector/init
+Accept: application/json
+
+### 查询。query条件查询结果不准确，应该跟用的内存向量库有关
+GET http://localhost:8080/vector/search?query=人&lucyNum=2
+Accept: application/json
