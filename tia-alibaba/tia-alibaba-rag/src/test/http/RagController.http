@@ -1,0 +1,11 @@
+### 不使用rag
+GET http://localhost:8080/rag/chat-normal
+Accept: application/json
+
+### 简单使用rag
+GET http://localhost:8080/rag/chat-simple
+Accept: application/json
+
+### 标准RAG
+GET http://localhost:8080/rag/chat
+Accept: application/json

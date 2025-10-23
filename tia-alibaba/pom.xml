@@ -13,6 +13,7 @@
         <module>tia-alibaba-mcp-server</module>
         <module>tia-alibaba-mcp-client</module>
         <module>tia-alibaba-embedding</module>
+        <module>tia-alibaba-rag</module>
     </modules>
 
     <properties>
