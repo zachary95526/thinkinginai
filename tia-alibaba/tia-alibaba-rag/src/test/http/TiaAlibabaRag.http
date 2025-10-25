@@ -9,3 +9,7 @@ Accept: application/json
 ### 标准RAG
 GET http://localhost:8080/rag/chat
 Accept: application/json
+
+### ETL
+GET http://localhost:8080/etl
+Accept: application/json
